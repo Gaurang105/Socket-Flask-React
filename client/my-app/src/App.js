@@ -1,7 +1,7 @@
 // App.js
 import React, { useState, useEffect } from 'react';
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "wss://socket-testing-oiyy.onrender.com/";
+const ENDPOINT = "https://socket-testing-oiyy.onrender.com/";
 
 function App() {
   const [response, setResponse] = useState("");
