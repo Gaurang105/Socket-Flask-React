@@ -4,8 +4,8 @@ from flask_socketio import SocketIO, send
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
-socketio = SocketIO(app, cors_allowed_origins="*") # This will enable CORS for socketio
+CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
 def index():
